@@ -34,8 +34,18 @@ end
 
 group :development do
   gem 'thin'
+  gem 'pry'
 end
 
+group :development, :test do
+	gem 'rspec-rails', '~> 2.14.0'
+end
+
+ 
+gem "devise", "~> 3.0.3"
+
+gem "anjlab-bootstrap-rails", "~> 3.0.0.2", :require => 'bootstrap-rails'
+gem 'bootstrap-glyphicons'
 # Use ActiveModel has_secure_password
 # gem 'bcrypt-ruby', '~> 3.0.0'
 
